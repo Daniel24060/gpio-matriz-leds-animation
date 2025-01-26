@@ -614,6 +614,104 @@ void animation_snake(){
   }
 }
 
+void animation_count5s(){
+  int matriz[5][5][3] = {
+    {{0, 0, 0}, {34, 255, 0}, {34, 255, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {34, 255, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {34, 255, 0}, {34, 255, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {34, 255, 0}, {34, 255, 0}, {34, 255, 0}, {0, 0, 0}}
+};
+
+      // Desenhando Sprite contido na matriz.c
+    for(int linha = 0; linha < 5; linha++)
+    {
+      for(int coluna = 0; coluna < 5; coluna++)
+      {
+        int posicao = getIndex(linha, coluna);
+        npSetLED(posicao, matriz[coluna][linha][0], matriz[coluna][linha][1], matriz[coluna][linha][2]);
+      }
+    }
+
+    
+    npWrite();
+    sleep_ms(1000);
+    npClear();
+
+    int matriz2[5][5][3] = {
+    {{0, 0, 0}, {34, 255, 0}, {0, 0, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {34, 255, 0}, {0, 0, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {34, 255, 0}, {34, 255, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {34, 255, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {34, 255, 0}, {0, 0, 0}}
+};
+  for(int linha = 0; linha < 5; linha++)
+    {
+      for(int coluna = 0; coluna < 5; coluna++)
+      {
+        int posicao = getIndex(linha, coluna);
+        npSetLED(posicao, matriz2[coluna][linha][0], matriz2[coluna][linha][1], matriz2[coluna][linha][2]);
+      }
+    }
+    npWrite();
+    sleep_ms(1000);
+
+    int matriz3[5][5][3] = {
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}}
+};
+  for(int linha = 0; linha < 5; linha++)
+    {
+      for(int coluna = 0; coluna < 5; coluna++)
+      {
+        int posicao = getIndex(linha, coluna);
+        npSetLED(posicao, matriz3[coluna][linha][0], matriz3[coluna][linha][1], matriz3[coluna][linha][2]);
+      }
+    }
+    npWrite();
+    sleep_ms(1000);
+    int matriz4[5][5][3] = {
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {255, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}}
+};
+  for(int linha = 0; linha < 5; linha++)
+    {
+      for(int coluna = 0; coluna < 5; coluna++)
+      {
+        int posicao = getIndex(linha, coluna);
+        npSetLED(posicao, matriz4[coluna][linha][0], matriz4[coluna][linha][1], matriz4[coluna][linha][2]);
+      }
+    }
+    npWrite();
+    sleep_ms(1000);
+
+    int matriz5[5][5][3] = {
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {255, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {255, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {255, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {255, 0, 0}, {255, 0, 0}, {255, 0, 0}, {0, 0, 0}}
+};
+  for(int linha = 0; linha < 5; linha++)
+    {
+      for(int coluna = 0; coluna < 5; coluna++)
+      {
+        int posicao = getIndex(linha, coluna);
+        npSetLED(posicao, matriz5[coluna][linha][0], matriz5[coluna][linha][1], matriz5[coluna][linha][2]);
+      }
+    }
+    npWrite();
+    sleep_ms(1000);
+    npClear();
+
+}
+
 
 int main() {
 
@@ -650,7 +748,7 @@ int main() {
             break;
 
         case '4':
-            
+            animation_count5s();
             break;
 
         case '5':
