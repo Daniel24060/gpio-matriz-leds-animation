@@ -6,9 +6,10 @@ Este projeto simula o controle de uma matriz de LEDs RGB 5x5 WS2812 utilizando o
 
 Segue o link do vídeo dos resultados obtidos durante a simulação:
 
-[Assista ao vídeo demonstrativo. Clique aqui!]()
+[Assista ao vídeo demonstrativo. Clique aqui!](https://youtu.be/VwnlTCHE6fU)
 
 
+Segue o link dos vídeos dos resultados obtidos usando o kit de desenvolvimento BitDogLab:
 
 ---
 
