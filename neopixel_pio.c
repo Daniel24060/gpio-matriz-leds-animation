@@ -12,21 +12,6 @@
 #define LED_COUNT 25
 #define LED_PIN 7
 
-
-//declaração das funções
-void animation_rabbit();
-void animation_button_2();
-void animation_button_3();
-void animation_button_4();
-void animation_button_5();
-void animation_button_6();
-void animation_button_A();
-void animation_button_B();
-void animation_button_C();
-void animation_button_D();
-void animation_button_hastag();
-
-
 // Definição dos pinos do teclado matricial
 const uint LINHAS[4] = {1, 2, 3, 4};       // GPIOs das linhas do teclado
 const uint COLUNAS[4] = {10, 11, 12, 13};  // GPIOs das colunas do teclado
@@ -712,6 +697,152 @@ void animation_count5s(){
 
 }
 
+void animation_tetris() {
+  int matriz[5][5][3] = {
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 1, 238}, {0, 1, 238}, {0, 1, 238}},    
+    {{0, 0, 0}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}, {0, 1, 238}},
+    {{159, 0, 243}, {159, 0, 243}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz[coluna][linha][0], matriz[coluna][linha][1], matriz[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz2[5][5][3] = {
+    {{1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 1, 238}, {0, 1, 238}, {0, 1, 238}},
+    {{0, 0, 0}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}, {0, 1, 238}},
+    {{159, 0, 243}, {159, 0, 243}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz2[coluna][linha][0], matriz2[coluna][linha][1], matriz2[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz3[5][5][3] = {
+    {{1, 240, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},  
+    {{1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},    
+    {{0, 0, 0}, {0, 0, 0}, {0, 1, 238}, {0, 1, 238}, {0, 1, 238}},
+    {{0, 0, 0}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}, {0, 1, 238}},     
+    {{159, 0, 243}, {159, 0, 243}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz3[coluna][linha][0], matriz3[coluna][linha][1], matriz3[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz4[5][5][3] = {
+    {{0, 0, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{1, 240, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{1, 240, 0}, {0, 0, 0}, {0, 1, 238}, {0, 1, 238}, {0, 1, 238}},       
+    {{0, 0, 0}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}, {0, 1, 238}},     
+    {{159, 0, 243}, {159, 0, 243}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz4[coluna][linha][0], matriz4[coluna][linha][1], matriz4[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz5[5][5][3] = {
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{1, 240, 0}, {1, 240, 0}, {0, 1, 238}, {0, 1, 238}, {0, 1, 238}},
+    {{1, 240, 0}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}, {0, 1, 238}},
+    {{159, 0, 243}, {159, 0, 243}, {159, 0, 243}, {240, 0, 3}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz5[coluna][linha][0], matriz5[coluna][linha][1], matriz5[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz6[5][5][3] = {
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{1, 240, 0}, {1, 240, 0}, {0, 0, 0}, {0, 1, 238}, {0, 1, 238}},
+    {{1, 240, 0}, {159, 0, 243}, {0, 0, 0}, {240, 0, 3}, {0, 1, 238}},
+    {{159, 0, 243}, {159, 0, 243}, {0, 0, 0}, {240, 0, 3}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz6[coluna][linha][0], matriz6[coluna][linha][1], matriz6[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz7[5][5][3] = {
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 1, 238}},
+    {{1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 1, 238}},
+    {{159, 0, 243}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {240, 0, 3}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz7[coluna][linha][0], matriz7[coluna][linha][1], matriz7[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz8[5][5][3] = {
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz8[coluna][linha][0], matriz8[coluna][linha][1], matriz8[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+  int matriz9[5][5][3] = {
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}},
+    {{0, 0, 0}, {1, 240, 0}, {0, 0, 0}, {0, 0, 0}, {0, 0, 0}}
+    };
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, matriz9[coluna][linha][0], matriz9[coluna][linha][1], matriz9[coluna][linha][2]);
+    }
+  }
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+}
 
 int main() {
 
@@ -752,7 +883,7 @@ int main() {
             break;
 
         case '5':
-            
+            animation_tetris();
             break;
 
         case '6':
