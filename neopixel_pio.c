@@ -843,6 +843,146 @@ void animation_tetris() {
   sleep_ms(1000);
   npClear();
 }
+void animation_cat(){
+  int animacao_1[5][5][3] = {
+    {{248, 42, 4}, {0, 0, 0}, {248, 42, 4}, {0, 0, 2}, {248, 42, 4}},
+    {{248, 43, 4}, {0, 2, 0}, {4, 220, 248}, {249, 42, 4}, {4, 222, 248}},
+    {{248, 40, 6}, {248, 42, 4}, {248, 42, 4}, {250, 41, 5}, {248, 40, 4}},
+    {{248, 40, 6}, {248, 42, 4}, {248, 40, 4}, {248, 42, 5}, {1, 0, 0}},
+    {{248, 42, 4}, {248, 42, 4}, {0, 0, 1}, {250, 42, 4}, {0, 0, 0}}
+};
+
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animacao_1[coluna][linha][0], animacao_1[coluna][linha][1], animacao_1[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+
+  int animacao_2[5][5][3] = {
+    {{249, 42, 4}, {1, 2, 0}, {248, 40, 4}, {0, 0, 3}, {248, 40, 4}},
+    {{248, 42, 4}, {0, 0, 0}, {4, 221, 248}, {248, 43, 6}, {5, 220, 248}},
+    {{248, 42, 6}, {248, 40, 4}, {249, 42, 5}, {248, 42, 4}, {250, 42, 6}},
+    {{248, 42, 5}, {248, 42, 4}, {250, 42, 4}, {248, 42, 4}, {1, 0, 0}},
+    {{248, 42, 4}, {248, 42, 4}, {0, 1, 0}, {248, 40, 4}, {0, 0, 0}}
+};
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animacao_2[coluna][linha][0], animacao_2[coluna][linha][1], animacao_2[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+
+  int animacao_3[5][5][3] = {
+   {{248, 42, 4}, {0, 0, 0}, {249, 43, 4}, {0, 2, 0}, {248, 43, 5}},
+    {{248, 42, 4}, {0, 0, 0}, {4, 221, 249}, {248, 43, 4}, {4, 221, 248}},
+    {{249, 42, 4}, {250, 42, 4}, {248, 42, 4}, {248, 42, 4}, {250, 41, 4}},
+    {{248, 42, 4}, {248, 42, 4}, {248, 40, 4}, {248, 40, 4}, {0, 0, 0}},
+    {{248, 42, 4}, {249, 40, 4}, {0, 0, 1}, {249, 42, 4}, {0, 0, 0}}
+  };
+
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animacao_3[coluna][linha][0], animacao_3[coluna][linha][1], animacao_3[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+
+  int animacao_4[5][5][3] = {
+       {{248, 43, 4}, {0, 2, 0}, {248, 42, 6}, {2, 2, 0}, {248, 42, 5}},
+    {{249, 40, 6}, {0, 0, 0}, {248, 42, 4}, {248, 42, 5}, {4, 221, 249}},
+    {{250, 41, 4}, {249, 42, 4}, {248, 42, 4}, {250, 238, 6}, {248, 42, 4}},
+    {{248, 42, 4}, {251, 42, 4}, {248, 42, 4}, {248, 43, 4}, {0, 0, 2}},
+    {{248, 40, 4}, {248, 42, 4}, {3, 1, 0}, {248, 42, 4}, {0, 0, 0}}
+  };
+
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animacao_4[coluna][linha][0], animacao_4[coluna][linha][1], animacao_4[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+
+  int animacao_5[5][5][3] = {
+ {{248, 43, 4}, {0, 2, 0}, {248, 42, 6}, {2, 2, 0}, {248, 42, 5}},
+    {{249, 40, 6}, {0, 0, 0}, {248, 42, 4}, {248, 42, 5}, {4, 221, 249}},
+    {{250, 41, 4}, {249, 42, 4}, {248, 42, 4}, {250, 238, 6}, {248, 42, 4}},
+    {{248, 42, 4}, {251, 42, 4}, {248, 42, 4}, {248, 43, 4}, {0, 0, 2}},
+    {{248, 40, 4}, {248, 42, 4}, {3, 1, 0}, {248, 42, 4}, {0, 0, 0}}
+  };
+
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animacao_5[coluna][linha][0], animacao_5[coluna][linha][1], animacao_5[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+
+  int animcao_6[5][5][3] = {
+    {{248, 43, 4}, {0, 2, 0}, {248, 42, 6}, {2, 2, 0}, {248, 42, 5}},
+    {{249, 40, 6}, {0, 0, 0}, {248, 42, 4}, {248, 42, 5}, {4, 221, 249}},
+    {{250, 41, 4}, {249, 42, 4}, {248, 42, 4}, {250, 238, 6}, {248, 42, 4}},
+    {{248, 42, 4}, {251, 42, 4}, {248, 42, 4}, {248, 43, 4}, {0, 0, 2}},
+    {{248, 40, 4}, {248, 42, 4}, {3, 1, 0}, {248, 42, 4}, {0, 0, 0}}
+  };
+
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animcao_6[coluna][linha][0], animcao_6[coluna][linha][1], animcao_6[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+
+  int animcao_7[5][5][3] = {
+   {{248, 42, 4}, {0, 2, 0}, {250, 40, 4}, {0, 2, 2}, {248, 43, 4}},
+    {{248, 42, 4}, {0, 0, 0}, {4, 221, 249}, {248, 42, 4}, {4, 221, 248}},
+    {{248, 42, 4}, {248, 42, 4}, {249, 42, 4}, {251, 238, 5}, {248, 42, 7}},
+    {{248, 40, 6}, {248, 42, 5}, {248, 42, 6}, {248, 42, 4}, {0, 2, 0}},
+    {{248, 42, 4}, {248, 42, 4}, {0, 2, 0}, {248, 42, 4}, {1, 0, 0}}
+  };
+
+   // Desenhando Sprite contido na matriz.c
+  for(int linha = 0; linha < 5; linha++){
+    for(int coluna = 0; coluna < 5; coluna++){
+      int posicao = getIndex(linha, coluna);
+      npSetLED(posicao, animcao_7[coluna][linha][0], animcao_7[coluna][linha][1], animcao_7[coluna][linha][2]);
+    }
+  }
+
+  npWrite();
+  sleep_ms(1000);
+  npClear();
+}
 
 int main() {
 
@@ -887,7 +1027,7 @@ int main() {
             break;
 
         case '6':
-
+            animation_cat();
             break;
 
         case '7':
