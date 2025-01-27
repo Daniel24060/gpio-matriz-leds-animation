@@ -84,7 +84,7 @@ ninja --version
 
 ## Simulação no Wokwi:
 
-Após a configuração, você pode usar o simulador Wokwi para testar o circuito. Acesse o simulador através do link [https://wokwi.com/](https://wokwi.com/) ou use a extensão do Wokwi no VSCode [https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode) e veja como a interação com o teclado matricial aciona os LEDs, o buzzer e exibe as informações no display LCD1602.
+Após a configuração, você pode usar o simulador Wokwi para testar o circuito. Acesse o simulador através do link [https://wokwi.com/](https://wokwi.com/) ou use a extensão do Wokwi no VSCode [https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode) e veja como a interação com o teclado matricial aciona os LEDs.
 
 
 ## Delegação de Tarefas
