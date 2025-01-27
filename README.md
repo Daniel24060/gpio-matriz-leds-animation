@@ -6,23 +6,15 @@ Este projeto simula o controle de uma matriz de LEDs RGB 5x5 WS2812 utilizando o
 
 Segue o link do vídeo dos resultados obtidos durante a simulação:
 
-[Assista ao vídeo demonstrativo. Clique aqui!](https://youtu.be/VwnlTCHE6fU)
-
-
-Segue o link dos vídeos dos resultados obtidos usando o kit de desenvolvimento BitDogLab:
+[Assista ao vídeo demonstrativo. Clique aqui!](https://youtu.be/zYnGLbKdQ28?si=gA-Kj8GmnxPTeHBY)
 
 ---
 
 ## Tabela de Conteúdos
-  - [Estrutura do Repositório](#estrutura-do-repositório)
   - [Como Rodar o Projeto](#como-rodar-o-projeto)
   - [Simulação no Wokwi:](#simulação-no-wokwi)
   - [Delegação de Tarefas](#delegação-de-tarefas)
   - [Prazos e Datas Importantes](#prazos-e-datas-importantes)
-
-## Estrutura do Repositório
-
-
 
 ## Como Rodar o Projeto
 
@@ -92,7 +84,7 @@ ninja --version
 
 ## Simulação no Wokwi:
 
-Após a configuração, você pode usar o simulador Wokwi para testar o circuito. Acesse o simulador através do link [https://wokwi.com/](https://wokwi.com/) ou use a extensão do Wokwi no VSCode [https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode) e veja como a interação com o teclado matricial aciona os LEDs, o buzzer e exibe as informações no display LCD1602.
+Após a configuração, você pode usar o simulador Wokwi para testar o circuito. Acesse o simulador através do link [https://wokwi.com/](https://wokwi.com/) ou use a extensão do Wokwi no VSCode [https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode](https://marketplace.visualstudio.com/items?itemName=Wokwi.wokwi-vscode) e veja como a interação com o teclado matricial aciona os LEDs.
 
 
 ## Delegação de Tarefas
@@ -108,7 +100,7 @@ Cada membro do projeto ficou responsável por uma parte específica. Abaixo est�
 | **Mychael Matos**     |                | ` ` |conversor-potencia`   |
 | **Caio Bruno**        |                      | ` `       |conversor-tempo`      | `      |
 | **Adimael Santos**      |             | ` `   |
-| **Tarefa Livre**      |               | ` `          |  |
+| **Saulo Davi**      |               | ` `          |  |
 
 ## Prazos e Datas Importantes
 
